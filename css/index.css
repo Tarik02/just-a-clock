@@ -1,0 +1,67 @@
+@font-face {
+	font-family: "digital-7";
+	src: url("../fonts/digital-7\ \(mono\).ttf");
+}
+
+@font-face {
+	font-family: "minecraft";
+	src: url("../fonts/F77MinecraftRegular-0VYv.ttf");
+}
+
+* {
+	-webkit-user-select: none;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.container {
+	width: 854px;
+	height: 480px;
+	background: black;
+	position: relative;
+}
+
+.field {
+	color: white;
+	position: absolute;
+}
+
+.time {
+	font-family: "digital-7";
+	font-size: 200px;
+
+	top: 20px;
+	left: 50px;
+}
+
+.day {
+	font-family: minecraft;
+	font-size: 80px;
+
+	top: 260px;
+	left: 50px;
+}
+
+.date {
+	font-family: minecraft;
+	font-size: 80px;
+
+	top: 370px;
+	left: 50px;
+}
+
+
+.container.mode-green .field {
+	color: #00FF00;
+}
+
+.container.mode-red .field {
+	color: #0000FF;
+}
